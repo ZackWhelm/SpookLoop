@@ -12,12 +12,13 @@ public class EventLocationCombo
 public class Event
 {
     public HauntEventType EventType;
+    public int ScareValue = 1;
 }
 
 [Serializable]
 public class Location
 {
-    public HouseLocation DisplayName;
+    public HouseLocation LocationType;
 }
 
 public enum HauntEventType

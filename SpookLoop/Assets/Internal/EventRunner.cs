@@ -23,9 +23,16 @@ public class EventRunner : MonoBehaviour
             Debug.LogError("combo is null.");
             yield break;
         }
+        Debug.Log("-------------------Event Running during step " + step+ " ---------------------");
+        Debug.Log("Step " + step + " : Triggered " + HauntEventTypeHelper.GetDisplayName(combo.ev.EventType) + " at " + LocationTypeHelper.GetDisplayName(combo.location.LocationType) + ".");
 
-
-        Debug.Log("Triggered " + HauntEventTypeHelper.GetDisplayName(combo.ev.EventType)+ " at " + combo.location.DisplayName + " at  step " + step);
+        HandleEventAtLocation(combo.ev, combo.location, step);
         yield return new WaitForSeconds(0.5f);
+    }
+
+    public void HandleEventAtLocation(Event ev, Location loc, int global_step)
+    {
+        Debug.Log("--- Event Handling for step " +  global_step + " ---");
+        RoomsManager.Instance.HandleEventAtLocation(ev, loc.LocationType, global_step);
     }
 }

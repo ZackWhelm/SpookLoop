@@ -7,6 +7,19 @@ public class VisualManager : MonoBehaviour
     public List<LocationVisual> locationVisuals = new List<LocationVisual>();
     public List<PersonVisual> personVisuals = new List<PersonVisual>();
 
+    public static VisualManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+    }
+
     // Vector 2 for now because drawing in 2d
     public Vector2 GetDisplayLocationForGuestVisualAtLocation(HouseLocation location)
     {

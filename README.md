@@ -5,7 +5,6 @@ since it's going on itch hastily designed for web with 960 x 600 resolution.
 # DEVLOG
 
 ## Day 0
------------------------------------
 
 ### ideation 
 

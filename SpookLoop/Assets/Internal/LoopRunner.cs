@@ -1,8 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LoopRunner : MonoBehaviour
 {
+    [Header("Hooks")]
+    public UnityEvent PreMoveHooks;
+
     [Header("Internals")]
     public Loop LoopToRun;
 
@@ -23,6 +27,7 @@ public class LoopRunner : MonoBehaviour
     {
         for (int i = 0; i < steps; i++)
         {
+            PreMoveHooks.Invoke();
             EventLocationCombo combo = LoopToRun.CurrEventLocationCombo();
             yield return EventRunner.Instance.RunEventLocationComboRoutine(combo, i);
             LoopToRun.MoveLoopForward();

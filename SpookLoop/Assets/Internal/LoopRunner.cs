@@ -31,7 +31,8 @@ public class LoopRunner : MonoBehaviour
             EventLocationCombo combo = LoopToRun.CurrEventLocationCombo();
             yield return EventRunner.Instance.RunEventLocationComboRoutine(combo, i);
             LoopToRun.MoveLoopForward();
-            PersonsManager.Instance.HandleBetweenRoundsFearLogic();
+            PersonsManager.Instance.HandleBetweenRoundsFearMoveLogic();
+            PersonsManager.Instance.HandleBetweenRoundsFearNumberLogic();
         }
     }
 

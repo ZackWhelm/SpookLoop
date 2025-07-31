@@ -69,4 +69,17 @@ public class RoomsManager : MonoBehaviour
         Room targetRoom = Rooms.Find(r => r.LocationRepresenting == loc);
         targetRoom.TriggerFearForPersonsInRoom(ev.ScareValue, global_step);
     }
+
+    public List<HouseLocation> GetConnectedRoomsToLocation(HouseLocation loc)
+    {
+        Room targetRoom = Rooms.Find(r => r.LocationRepresenting == loc);
+        return targetRoom.ConnectedHouseLocations;
+    }
+
+    public Room GetRoomRepresentingLoc(HouseLocation loc)
+    {
+        // TODO - this is terrible why is this a list, 
+        Room targetRoom = Rooms.Find(r => r.LocationRepresenting == loc);
+        return targetRoom;
+    }
 }

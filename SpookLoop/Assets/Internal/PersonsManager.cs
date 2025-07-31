@@ -33,7 +33,18 @@ public class PersonsManager : MonoBehaviour
         }
     }
 
-    public void HandleBetweenRoundsFearLogic()
+    public void HandleBetweenRoundsFearMoveLogic()
+    {
+        foreach (var person in Persons)
+        {
+            if (person.DidPersonGetFearedThisTurn())
+            {
+                person.TryMoveFromCurrRoom();
+            }
+        }
+    }
+
+    public void HandleBetweenRoundsFearNumberLogic()
     {
         foreach (var person in Persons)
         {

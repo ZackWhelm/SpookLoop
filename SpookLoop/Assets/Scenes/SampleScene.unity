@@ -1300,6 +1300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocationRepresenting: 2
+  ConnectedHouseLocations: 0300000004000000
+  AdjacentHouseLocations: 04000000030000000500000000000000
   PersonsInRoom: []
 --- !u!4 &581619303
 Transform:
@@ -1802,6 +1804,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocationRepresenting: 5
+  ConnectedHouseLocations: 
+  AdjacentHouseLocations: 
   PersonsInRoom: []
 --- !u!4 &934944540
 Transform:
@@ -2074,6 +2078,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocationRepresenting: 3
+  ConnectedHouseLocations: 02000000
+  AdjacentHouseLocations: 0000000002000000
   PersonsInRoom: []
 --- !u!4 &1054357299
 Transform:
@@ -2120,6 +2126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocationRepresenting: 1
+  ConnectedHouseLocations: 04000000
+  AdjacentHouseLocations: 0400000005000000
   PersonsInRoom: []
 --- !u!4 &1167022055
 Transform:
@@ -2348,6 +2356,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocationRepresenting: 0
+  ConnectedHouseLocations: 04000000
+  AdjacentHouseLocations: 040000000300000002000000
   PersonsInRoom: []
 --- !u!4 &1208236197
 Transform:
@@ -2769,10 +2779,10 @@ MonoBehaviour:
     location:
       LocationType: 1
   - ev:
-      EventType: 4
+      EventType: 5
       ScareValue: 1
     location:
-      LocationType: 1
+      LocationType: 4
   CurrLoopLocation: 0
 --- !u!114 &1464016246
 MonoBehaviour:
@@ -2996,6 +3006,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LocationRepresenting: 4
+  ConnectedHouseLocations: 00000000010000000500000002000000
+  AdjacentHouseLocations: 01000000000000000200000005000000
   PersonsInRoom: []
 --- !u!4 &1594507656
 Transform:

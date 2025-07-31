@@ -2,9 +2,15 @@ Game Jam entry for summer 2025 gmtk game jam.
 
 since it's going on itch hastily designed for web with 960 x 600 resolution. 
 
-**Day 1**
-Lots of brainstorming. 
-I knew I wanted something cozy but spooky since my current game leans very eery. I thought it would be cool if you played as like an entity from the conjuring/paranormal activity. 
+# DEVLOG
+
+## Day 0
+-----------------------------------
+
+### ideation 
+
+Lots of brainstorming. I knew I wanted something cozy but spooky since my current game leans very eery. 
+I thought it would be cool if you played as like an entity from the conjuring/paranormal activity. 
 I originally thought a fps view with like looping cards for potential haunts could be a mood. 
 I like the idea of getting packs with specific haunts, I'm fond of having to deterimine haunt order before hand and playing around that. 
 Think like neon white meets phasmo where you are the ghost. 
@@ -22,12 +28,16 @@ could have cool multiplayers for spooking multiple people at once
 progression system of quantified fear to buy more cards via packs
 progressino system to upgrade house via money spent by people visiting the haunted house
 
-_MVP Goals_
+### defined goals
+
 Looping system with cards constructed of events and location
 Working ai that reacts in very basic manner to haunts. 
 Some sort of visuals for rooms and haunted house guests. 
 Some sort of visuals for haunts
 Some sort of visuals for card creation and loop construction
 
+### what actually got done
+
+data structures and some classes for loops and triggering events. 
 
 

@@ -39,4 +39,14 @@ Some sort of visuals for card creation and loop construction
 
 data structures and some classes for loops and triggering events. 
 
+## Day 1
+
+### what actually got done
+
+got some card hovering and dropping down
+
+### decision on the project
+
+this seems like it should be scoped out over 3 weeks , not 3 days. 
+
 
